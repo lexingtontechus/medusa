@@ -14,8 +14,10 @@ const FooterNav = () => {
       <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
         <div>
           <Link href="/" className="text-xl-semi uppercase">
-            Acme
+            Lexington
           </Link>
+          <p className="text-xs">16192 Coastal Hwy</p>
+          <p className="text-xs">Dewes DE 19958</p>
         </div>
         <div className="text-small-regular grid grid-cols-3 gap-x-10 md:gap-x-16">
           {product_categories && (
@@ -112,7 +114,7 @@ const FooterNav = () => {
       </div>
       <div className="flex flex-col-reverse gap-y-4 justify-center xsmall:items-center xsmall:flex-row xsmall:items-end xsmall:justify-between">
         <span className="text-xsmall-regular text-gray-500">
-          © Copyright 2022 ACME
+          © Copyright {new Date().getFullYear()} LEXINGTON
         </span>
         <div className="min-w-[316px] flex xsmall:justify-end">
           <CountrySelect />
